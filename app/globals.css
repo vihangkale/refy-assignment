@@ -31,3 +31,16 @@ body {
     text-wrap: balance;
   }
 }
+
+.cart-button {
+  display: flex;
+  align-items: center;
+  width: 110.52px;
+  height: 47.62px;
+  background: rgba(24, 176, 233, 0.1);
+  border: 1px solid rgba(24, 176, 233, 0.3);
+  border-radius: 25px;
+}
+.getStarted-gradient {
+  background: linear-gradient(92.57deg, #18b0e9 0.71%, #0d80df 99.37%);
+}
