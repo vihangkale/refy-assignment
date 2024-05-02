@@ -29,10 +29,10 @@ export default function ImageWithText({ data, id }) {
           {header}
         </p>
         <ul
-          className={`${poppins.className} text-[#5A5A5A] text-[18px] leading-[30px] font-normal`}
+          className={`${poppins.className} text-[#5A5A5A] text-[18px] leading-[30px] font-normal list-disc ml-[19px]`}
         >
-          {points?.map((point) => (
-            <li>{point}</li>
+          {points?.map((point, index) => (
+            <li key={index}>{point}</li>
           ))}
         </ul>
       </div>

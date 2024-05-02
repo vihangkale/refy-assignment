@@ -22,6 +22,10 @@ const links = [
     href: "/career",
   },
   {
+    name: "Contact Us",
+    href: "/contact",
+  },
+  {
     name: "Cart",
     href: "/cart",
     icon: cart,
