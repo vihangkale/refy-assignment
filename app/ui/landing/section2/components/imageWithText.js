@@ -7,7 +7,7 @@ export default function ImageWithText({ data, id }) {
   return (
     <div
       className={clsx(
-        `w-full flex flex-col md:flex-row h-[30.813rem] justify-between items-center`,
+        `w-full flex flex-col md:flex-row m-h-[30.813rem] justify-between items-center`,
         {
           "md:flex-row-reverse": id === 2,
         }
@@ -15,11 +15,11 @@ export default function ImageWithText({ data, id }) {
     >
       <Image src={image} height="100%" alt="company logo" />
       <div
-        className={clsx(`mr-[7.5rem]`, {
-          "mr-0 ml-[7.5rem]": id === 2,
+        className={clsx(`mr-0 mt-[2rem] md:mt-0 md:mr-[7.5rem]`, {
+          "mr-0 ml-0 md:ml-[7.5rem]": id === 2,
         })}
       >
-        <div className="flex gap-x-[21px] items-center">
+        <div className="flex flex-col md:flex-row gap-y-[1rem] md:gap-x-[21px] items-center">
           <p className="text-[70px] font-bold leading-[85px] text-[#D9D9D9]">
             {"0" + id}
           </p>

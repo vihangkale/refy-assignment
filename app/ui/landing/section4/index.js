@@ -6,8 +6,8 @@ import Hero from "../../../assets/hero4.svg";
 import Image from "next/image";
 export default function Section4() {
   return (
-    <div className="flex justify-between  mt-[11.25rem]">
-      <div className="w-2/4 flex flex-col gap-y-[40px]">
+    <div className="flex justify-between flex-col md:flex-row mt-[11.25rem] gap-y-[60px]">
+      <div className="w-full md:w-2/4 flex flex-col gap-y-[40px]">
         <Header />
         <List />
         <Text />

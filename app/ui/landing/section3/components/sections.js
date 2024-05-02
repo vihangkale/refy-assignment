@@ -43,13 +43,13 @@ const sectionData2 = [
 export default function Sections() {
   return (
     <div className="flex flex-col md:flex-row gap-[40px] mt-[37.95px]">
-      <div className="flex flex-col gap-[40px] w-6/12">
+      <div className="flex flex-col gap-[40px] w-full md:w-6/12">
         <SubHeading heading="Services" />
         {sectionData1?.map((dataObj, index) => (
           <Section key={index} data={dataObj} />
         ))}
       </div>
-      <div className="flex flex-col gap-[40px] w-6/12 mt-[70px]">
+      <div className="flex flex-col gap-[40px] w-full md:w-6/12 mt-[70px]">
         {sectionData2?.map((dataObj, index) => (
           <Section key={index} data={dataObj} />
         ))}

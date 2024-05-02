@@ -31,7 +31,7 @@ const links = [
 export default function Footer() {
   return (
     <footer
-      className={`${poppins.className} mt-[6.25rem] text-base font-normal leading-[26px] bg-[#162251] h-[66px] rounded-t-[30px] flex justify-center gap-x-[60px] text-white`}
+      className={`${poppins.className} mt-[6.25rem] text-base font-normal leading-[26px] bg-[#162251] min-h-[66px] rounded-t-[30px] flex flex-col md:flex-row justify-center gap-y-[16px] md:gap-x-[60px] text-white py-[16px] md:p-0`}
     >
       {links.map((link) => {
         const { name, href } = link ?? {};

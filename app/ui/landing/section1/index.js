@@ -3,7 +3,7 @@ import Hero1Image from "../../hero-1-image";
 export default function Section1() {
   return (
     <div>
-      <div className="flex flex-col gap-y-10 mt-[17.914rem]">
+      <div className="flex flex-col gap-y-10 mt-[32px] md:mt-[17.914rem]">
         <p className="text-[60px] font-thin leading-[73px] text-[#333333] w-[30%]">
           <span className="text-[80px] font-bold leading-[97px]">
             {" "}
