@@ -1,5 +1,5 @@
 import Header from "./components/header";
-import List from "./components/list";
+import ListSection from "./components/listSection";
 import Text from "./components/text";
 import Button from "./components/button";
 import Hero from "../../../assets/hero4.svg";
@@ -9,7 +9,7 @@ export default function Section4() {
     <div className="flex justify-between flex-col md:flex-row mt-[11.25rem] gap-y-[60px]">
       <div className="w-full md:w-2/4 flex flex-col gap-y-[40px]">
         <Header />
-        <List />
+        <ListSection />
         <Text />
         <Button />
       </div>
