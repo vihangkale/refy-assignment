@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { poppins } from "../font";
+import { poppins } from "./font";
 import { usePathname } from "next/navigation";
 const links = [
   {
@@ -50,14 +50,14 @@ export default function MobileNav() {
         </svg>
       </button>
       {isMenu && (
-        <div className="flex flex-col w-full">
+        <div class="flex flex-col w-full">
           {links.map((link) => {
             const { name, href, className } = link ?? {};
             return (
               <Link
                 key={name}
                 href={href}
-                className={clsx(
+                class={clsx(
                   `${poppins.className} ${
                     className ? className : ""
                   } flex grow items-center justify-center text-base font-normal	leading-[26px] text-[#333333] px-[1rem] py-[14px] hover:bg-[#ddd]`,

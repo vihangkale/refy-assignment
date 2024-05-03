@@ -1,9 +1,9 @@
 "use client";
-import { poppins } from "../font";
+import { poppins } from "./font";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import cart from "../../assets/cart.svg";
+import cart from "../assets/cart.svg";
 import Image from "next/image";
 
 // Map of links to display in the side navigation.
