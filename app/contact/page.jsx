@@ -32,6 +32,7 @@ export default function Page() {
 
           {inputs?.map(({ label, name }) => (
             <input
+              key={name}
               className={`${opensans.className} border border-solid border-[#18B0E9] rounded-[3px] w-full h-[56px] px-[20px] py-[12px] text-[14px] font-normal text-black`}
               type="text"
               placeholder={label}
