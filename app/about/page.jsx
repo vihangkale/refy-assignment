@@ -4,7 +4,7 @@ import hero from "../assets/aboutHero.svg";
 import { poppins } from "../ui/font";
 export default function Page() {
   return (
-    <div className="flex flex-col gap-y-[60px] pt-[175.51px] px-[30px] bg-white">
+    <div className="flex flex-col gap-y-[60px] py-[175.51px] px-[30px] bg-white">
       <Heading text="About Us" className="text-center" />
       <div className="flex flex-col md:flex-row gap-[40px] items-center">
         <p
