@@ -1,7 +1,7 @@
 export default function table({ header, data }) {
   return (
-    <table>
-      <thead className="bg-[#B9B9B9] p-2">
+    <table className="rounded-[1rem]">
+      <thead className="bg-[#B9B9B9] p-2 rounded-[1rem]">
         {header?.map(({ title, value }) => (
           <th key={value}>{title}</th>
         ))}
@@ -10,7 +10,9 @@ export default function table({ header, data }) {
         {data?.map((obj, idx) => (
           <tr key={idx} className="border border-solid border-[#000000]">
             {header?.map(({ value, id }) => (
-              <td key={id}>{obj[value]}</td>
+              <td key={id} className="p-2">
+                {obj[value]}
+              </td>
             ))}
           </tr>
         ))}

@@ -46,10 +46,7 @@ export default function NavLinks() {
             className={clsx(
               `${poppins.className} ${
                 className ? className : ""
-              } flex grow items-center justify-center text-basefont-normal	leading-[26px] text-[#333333] gap-x-2.5`,
-              {
-                "bg-sky-100 text-blue-600": pathname === href,
-              }
+              } flex grow items-center justify-center text-basefont-normal	leading-[26px] text-[#333333] gap-x-2.5`
             )}
           >
             {/* <LinkIcon className="w-6" /> */}

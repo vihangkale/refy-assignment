@@ -1,8 +1,12 @@
+"use client";
 import Heading from "../ui/heading";
 import Image from "next/image";
 import { poppins, opensans } from "../ui/font";
 import hero from "../assets/aboutHero.svg";
 import map from "../assets/map.svg";
+import { createContact } from "../actions";
+import { useFormState } from "react-dom";
+
 const inputs = [
   {
     label: "Name",
@@ -18,8 +22,10 @@ const inputs = [
   },
 ];
 export default function Page() {
+  const [errorMessage, dispatch] = useFormState(createContact, undefined);
+
   return (
-    <div className="py-[175.51px] flex flex-col gap-y-[60px] px-[30px]">
+    <div className="py-[175.51px] flex flex-col gap-y-[60px] px-[30px] bg-white">
       <Heading text="Contact Us" className="text-center" />
       <div className="flex flex-col md:flex-row gap-[40px]">
         <div className="w-full md:w-2/4 flex flex-col gap-[36px]">
@@ -29,19 +35,23 @@ export default function Page() {
             Lorem ipsum dolor sit amet consectetur. Ultrices feugiat sed proin
             metus.
           </p>
-
-          {inputs?.map(({ label, name }) => (
-            <input
-              key={name}
-              className={`${opensans.className} border border-solid border-[#18B0E9] rounded-[3px] w-full h-[56px] px-[20px] py-[12px] text-[14px] font-normal text-black`}
-              type="text"
-              placeholder={label}
-              name={name}
-            />
-          ))}
-          <button className="w-[188px] h-[48px] justofy-center items-center getStarted-gradient border border-solid border-[#0D80DF] rounded-[24px] font-bold text-[#FFFFFF] leading-[24px] text-base text-white">
-            Submit
-          </button>
+          <form
+            action={dispatch}
+            className="space-y-3 flex flex-col gap-[36px]"
+          >
+            {inputs?.map(({ label, name }) => (
+              <input
+                key={name}
+                className={`${opensans.className} border border-solid border-[#8B90B6] rounded-[3px] w-full h-[56px] px-[20px] py-[12px] text-[14px] font-normal text-black`}
+                type="text"
+                placeholder={label}
+                name={name}
+              />
+            ))}
+            <button className="w-[188px] h-[48px] justofy-center items-center getStarted-gradient border border-solid border-[#0D80DF] rounded-[24px] font-bold text-[#FFFFFF] leading-[24px] text-base text-white">
+              Submit
+            </button>
+          </form>
         </div>
         <Image className="w-full md:w-2/4" src={hero} alt="about" />
       </div>
